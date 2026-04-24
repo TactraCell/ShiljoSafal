@@ -524,9 +524,9 @@ footer p{font-size:.78rem;color:var(--muted);}
           </a>
         </div>
         <div style="margin-top:1.5rem;">
-          <a href="#" class="btn btn-ghost" onclick="downloadResume();return false;" style="width:100%;">
+          <a href="#" class="btn btn-ghost" onclick="download();return false;" style="width:100%;">
             <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download My Resume (PDF)
+            Download My  (PDF)
           </a>
         </div>
       </div>
@@ -612,7 +612,7 @@ document.querySelectorAll('.exp-nav-btn').forEach(btn=>{btn.addEventListener('cl
 
 // PDF DOWNLOAD
 const pdfData='data:application/pdf;base64,JVBERi0xLjQKJdPr6eEKMSAwIG9iago8PC9UaXRsZSAoU2hpbGpvX1Jlc3VtZV8yMDI2KQovUHJvZHVjZXIgKFNraWEvUERGIG0xNDggR29vZ2xlIERvY3MgUmVuZGVyZXIpPj4KZW5kb2JqCjMgMCBvYmoKPDwvY2EgMQovQk0gL05vcm1hbD4+CmVuZG9iagplbmRvYmoKeHJlZgowIDIKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE1IDAwMDAwIG4gCnRyYWlsZXIKPDwvU2l6ZSAyCi9Sb290IDEgMCBSPj4Kc3RhcnR4cmVmCjEwOAolJUVPRgo=';
-function downloadResume(){const a=document.createElement('a');a.href=pdfData;a.download='Shiljo_Safal_Resume.pdf';document.body.appendChild(a);a.click();document.body.removeChild(a);}
+function downloadResume(){const a=document.createElement('a');a.href=pdfData;a.download='resume.pdf';document.body.appendChild(a);a.click();document.body.removeChild(a);}
 
 // EMAILJS
 (function(){const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';s.onload=()=>{emailjs.init({publicKey:'VPie0hBN-hFJpyG_o'});};document.head.appendChild(s);})();
